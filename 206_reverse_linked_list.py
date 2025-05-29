@@ -1,9 +1,6 @@
 class Solution:
-    # Iterative solution (Time: O(N) / Space: O(1))
+    # Iterative solution (Time: O(n) / Space: O(1))
     def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
-        if not head:
-            return
-
         current = head
         prev = None
 
@@ -14,7 +11,7 @@ class Solution:
             current = next
         return prev
 
-    # Recursive solution (Time: O(N) / Space: O(N))
+    # Recursive solution (Time: O(n) / Space: O(n))
     def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
        if head is None:
           return prev

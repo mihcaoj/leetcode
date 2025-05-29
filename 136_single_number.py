@@ -1,5 +1,5 @@
 class Solution:
-    # Naive solution
+    # Naive solution (Time: O(n) / Space: O(n))
     def singleNumber(self, nums: List[int]) -> int:
         my_set = set()
 
@@ -10,7 +10,7 @@ class Solution:
                 my_set.remove(nums[i])
         return my_set.pop()
 
-    # Optimal solution
+    # Optimal solution (Time: O(N) / Space: O(1))
     def singleNumber(self, nums: List[int]) -> int:
         result = 0
 

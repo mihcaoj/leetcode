@@ -1,9 +1,6 @@
 class Solution:
-    # Time: O(N) / Space: O(1)
+    # Time: O(n) / Space: O(1)
     def removeElements(self, head: Optional[ListNode], val: int) -> Optional[ListNode]:
-        if not head:
-            return
-
         dummy = ListNode()
         dummy.next = head
         prev = dummy
