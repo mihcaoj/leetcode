@@ -1,5 +1,5 @@
 class Solution:
-    # Time: O(n) / Space: O(1)
+    # Time: O(n) / Space: O(n)
     def missingNumber(self, nums: List[int]) -> int:
         n = len(nums) + 1
         my_set = set(nums)
