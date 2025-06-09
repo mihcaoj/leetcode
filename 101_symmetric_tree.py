@@ -13,5 +13,4 @@ class Solution:
     def isSymmetric(self, root: Optional[TreeNode]) -> bool:
         if not root:
             return True
-
         return self.is_mirror(root.left, root.right)
