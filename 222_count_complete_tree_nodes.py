@@ -1,13 +1,5 @@
 class Solution:
-    # Naive solution (Time: O(n) / Space: O(h))
-    def countNodes(self, root: Optional[TreeNode]) -> int:
-        def preorder_traversal(node):
-            if not node:
-                return 0
-            return preorder_traversal(node.left) + preorder_traversal(node.right) + 1
-        return preorder_traversal(root)
-
-    # Recursive DFS - Also Naive solution (Time: O(n) / Space: O(h))
+    # Recursive DFS - Naive solution (Time: O(n) / Space: O(h))
     def countNodes(self, root: Optional[TreeNode]) -> int:
         if not root: return 0
         return 1 + self.countNodes(root.left) + self.countNodes(root.right)
