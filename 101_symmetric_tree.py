@@ -1,3 +1,6 @@
+'''
+Given the root of a binary tree, check whether it is a mirror of itself (i.e., symmetric around its center).
+'''
 class Solution:
     # Time: O(n) / Space: O(h)
     def is_mirror(self, left, right):

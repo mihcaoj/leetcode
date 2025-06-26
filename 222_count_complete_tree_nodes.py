@@ -1,3 +1,6 @@
+'''
+Given the root of a complete binary tree, return the number of the nodes in the tree.
+'''
 class Solution:
     # Recursive DFS - Naive solution (Time: O(n) / Space: O(h))
     def countNodes(self, root: Optional[TreeNode]) -> int:
