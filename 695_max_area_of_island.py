@@ -25,9 +25,9 @@ class Solution:
             return area
 
         max_area = 0
-        for i in range(rows):
-            for j in range(cols):
-                if grid[i][j]:
-                    curr_area = dfs(i, j)
+        for r in range(rows):
+            for c in range(cols):
+                if grid[r][c]:
+                    curr_area = dfs(r, c)
                     max_area = max(curr_area, max_area)
         return max_area
