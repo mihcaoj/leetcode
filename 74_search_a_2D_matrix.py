@@ -6,22 +6,27 @@ Given an integer target, return true if target is in matrix or false otherwise.
 You must write a solution in O(log(m * n)) time complexity.
 '''
 class Solution:
-    # Time: O(logm+logn) / Space: O(1)
+    # Time: O(logm + logn) / Space: O(1)
     def searchMatrix(self, matrix: List[List[int]], target: int) -> bool:
-        left, up = 0, 0
-        right, down = len(matrix) - 1, len(matrix) - 1
+        if not matrix or not matrix[0]: return False
 
-        while up <= down:
-            mid = (up + down) // 2
-            if matrix[mid][0] < target and matrix[mid][-1] > target:
+        m, n = len(matrix), len(matrix[0])
+        top, bottom = 0, m - 1
+        row = -1
+        while top <= bottom:
+            mid = (top + bottom) // 2
+            if matrix[mid][0] <= target <= matrix[mid][-1]:
+                row = mid
                 break
             elif matrix[mid][0] > target:
-                down = mid - 1
+                bottom = mid - 1
             else:
                 top = mid + 1
 
-        row = (up + down) // 2
+        if row == -1:
+            return False
 
+        left, right = 0, n - 1
         while left <= right:
             mid = (left + right) // 2
             if matrix[row][mid] == target:
