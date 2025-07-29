@@ -1,6 +1,3 @@
-'''
-Given an array nums of size n, return the majority element.
-'''
 class Solution:
     # Time: O(n) / Space: O(n)
     def majorityElement(self, nums: List[int]) -> int:

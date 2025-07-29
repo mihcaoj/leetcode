@@ -1,6 +1,3 @@
-'''
-Given a positive integer n, write a function that returns the number of in its binary representation (also known as the Hamming weight).
-'''
 class Solution:
     # Time: O(n) / Space: O(1)
     def hammingWeight(self, n: int) -> int:

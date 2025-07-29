@@ -1,7 +1,3 @@
-'''
-Given an integer array nums, move all the even integers at the beginning of the array followed by all the odd integers.
-Return any array that satisfies this condition.
-'''
 class Solution:
     # Naive solution (Time: O(n) / Space: O(1))
     def sortArrayByParity(self, nums: List[int]) -> List[int]:

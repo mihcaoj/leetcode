@@ -1,6 +1,3 @@
-'''
-Given num, the array-form of an integer, and an integer k, return the array-form of the integer num + k.
-'''
 class Solution:
     # Time: O(n + logk) / Space: O(n + logk)
     def addToArrayForm(self, num: List[int], k: int) -> List[int]:

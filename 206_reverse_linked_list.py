@@ -1,6 +1,3 @@
-'''
-Given the head of a singly linked list, reverse the list, and return the reversed list.
-'''
 class Solution:
     # Iterative solution (Time: O(n) / Space: O(1))
     def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
