@@ -1,3 +1,4 @@
+// Time: O(n) / Space: O(n)
 function lengthOfLongestSubstring(s: string): number {
   let longest = 0;
   let left = 0;
