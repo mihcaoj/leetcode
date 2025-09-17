@@ -1,4 +1,4 @@
-# Time: O(logn) / Space: O(logn)
+# Time: O(logn) / Space: O(logn)
 class Solution:
     def isHappy(self, n: int) -> bool:
         seen = set()
